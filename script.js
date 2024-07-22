@@ -5,6 +5,10 @@ console.log("Hack Club HQ is at " + line1 + ", " + line2 + ", " + line3 + ".")
 
 // -Return Keyword- //
 // The return keyword is used to return a value from a function at the location where it's called. For example:
+let currentyear = 2024
+let birthyear = 2018
+
+
 function findDrakeAndHisWifesAge(currentyear - birthyear) {
   return currentyear - birthyear;
 }
