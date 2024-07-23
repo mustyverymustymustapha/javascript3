@@ -24,3 +24,31 @@ function multiplyByNineFifths(number) {
 function getFahrenheit(celsius) {
   return multiplyByNineFifths(celsius) + 32;
 };
+
+
+
+
+
+
+
+// -Function Expressions- //
+// Function expressions are functions that are created in another expression/variable. For example:
+
+const zach = function() {
+  return 'Zach Latta';
+}
+
+
+// -Arrow Functions- //
+// Arrow functions are functions that are created in another expression/variable. For example:
+
+const sum = (firstParameter, secondParameter) => { 
+  return firstParameter + secondParameter; 
+}; 
+
+
+// -Concise Body Arrow Functions- //
+// Concise Body Arrow Functions are the most condensed form of body arrow functions. For example:
+const iNeedSleep = (time) => {
+  return time === '9:00' ? 'I need to sleep!' : 'No sleep.'
+}
