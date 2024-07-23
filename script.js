@@ -52,3 +52,41 @@ const sum = (firstParameter, secondParameter) => {
 const iNeedSleep = (time) => {
   return time === '9:00' ? 'I need to sleep!' : 'No sleep.'
 }
+
+
+
+
+
+// this is rock paper scissors and i took very long cuz im stupid
+
+function getComputerChoice() {
+    const choices = ['Rock', 'Paper', 'Scissors'];
+    const randomIndex = Math.floor(Math.random() * 3);
+    return choices[randomIndex];
+}
+
+function determineWinner(playerChoice, computerChoice) {
+    if (playerChoice === computerChoice) {
+        return "It's a tie!";
+    }
+
+    if (
+        (playerChoice === 'Rock' && computerChoice === 'Scissors') ||
+        (playerChoice === 'Paper' && computerChoice === 'Rock') ||
+        (playerChoice === 'Scissors' && computerChoice === 'Paper')
+    ) {
+        return "You win!";
+    } else {
+        return "Computer wins!";
+    }
+}
+
+
+function playGame(playerChoice) {
+    const computerChoice = getComputerChoice();
+    console.log(`Your choice: ${playerChoice}`);
+    console.log(`Computer's choice: ${computerChoice}`);
+    console.log(determineWinner(playerChoice, computerChoice));
+}
+
+playGame('Rock');
